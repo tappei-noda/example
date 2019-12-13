@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE configuration>
+<Modules><!--コメント-->
+
+	<Module>
+		<PATH>/Users/noda/eclipse-workspace/juicetest/bin/juicetest/hello.class</PATH>
+		<FQCN>juicetest.hello</FQCN>
+		<ROLE>communicate</ROLE>
+		<FEATURE>none</FEATURE>
+	</Module>
+	
+	<Module>
+		<PATH>/Users/noda/eclipse-workspace/juicetest/bin/juicetest/hello1.class</PATH>
+		<FQCN>juicetest.hello1</FQCN>
+		<ROLE>execute</ROLE>
+		<FEATURE>none</FEATURE>
+	</Module>
+	<Module>
+		<PATH>/Users/noda/Downloads/jiken2t6/week2/system1/my_adder.bit</PATH>
+		<FQCN>none</FQCN>
+		<ROLE>communicate1</ROLE>
+		<FEATURE>none</FEATURE>
+	</Module>
+		
+</Modules>
+
+		
