@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE configuration>
+<Modules><!--comments-->
+
+<!--	<Module>
+		<PATH>/Users/noda/eclipse-workspace/juicetest/bin/juicetest/hello.class</PATH>
+		<FQCN>juicetest.hello</FQCN>
+		<ROLE>communicate</ROLE>
+		<FEATURE>none</FEATURE>
+	</Module> -->
+	
+<!--	<Module>
+		<PATH>/Users/noda/eclipse-workspace/juicetest/bin/juicetest/hello1.class</PATH>
+		<FQCN>juicetest.hello1</FQCN>
+		<ROLE>execute</ROLE>
+		<FEATURE>none</FEATURE>
+	</Module> -->
+
+	<Module>
+		<PATH>/workspace/vitis_example/Vitis-Tutorials/docs/mixing-c-rtl-kernels/reference-files/run5/krnl_sadd.sw_emu.xilinx_u200_xdma_201830_2.xclbin</PATH>
+		<FQCN>none</FQCN>
+		<ROLE>add</ROLE>
+		<FEATURE>none</FEATURE>
+	</Module>
+		
+</Modules>
+
+		
