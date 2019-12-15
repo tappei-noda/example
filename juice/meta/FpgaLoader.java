@@ -9,7 +9,7 @@ public class FpgaLoader extends MetaObject{
 	
 	private MetaObjectManager metaobjectmanager;
 	private byte[] stream ;
-//	private String stream;
+	private String stream2;
 	
 	public FpgaLoader() {
 		}
@@ -17,14 +17,25 @@ public class FpgaLoader extends MetaObject{
 	public void setup() {
 		
 		metaobjectmanager = this.getmetaobjectmanager();
-		getstream();
+//		getstream();
+		getstream2();
 //		outputstream();
+		outputstream2();
 		
 		}
 	
 	public void getstream() {
 		stream = metaobjectmanager.loadstream();
 			}
+	public void getstream2(){
+		stream2 = metaobjectmanager.loadstream2();
+		System.out.println(stream2);	
+}
+	public void outputstream2(){
+		int x = jnatest.INSTANCE.add(8,9,stream2);
+		System.out.println(x);
+		
+}
 	
 	
 	public void outputstream() {

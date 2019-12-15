@@ -22,4 +22,7 @@ public MetaObjectManager createmetaobjectmanager() {
 public byte[] search(String role) {
 	return rep.searchrepo(role);
     }
+public String search2(String role){
+	return rep.searchrepo2(role);
+	}
 }

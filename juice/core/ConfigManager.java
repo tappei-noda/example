@@ -45,6 +45,11 @@ public class ConfigManager {
 	public byte[] outstream() {
 		return	kernel.search(role);	
 	}
+
+	public String outstream2(){
+		return kernel.search2(role);
+}
+
 	
 /*	public byte[] outstream() {
 		

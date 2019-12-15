@@ -23,6 +23,7 @@ public class Repository {
 	
 	private List<MetaModulesInfo> metamodulesinfo;
 	private Map<String, byte[]> map;
+	private Map<String,String>  map2;
 	
 	public Repository(){
 		try {
@@ -57,9 +58,11 @@ public class Repository {
 	
 	private void test() throws IOException {
 		map = new HashMap<String,byte[]>();
+		map2 = new HashMap<String,String>();
 		for(MetaModulesInfo metamodule : metamodulesinfo) {
 			byte[] bin = read(metamodule.Path);
 			map.put(metamodule.Role, bin);
+			map2.put(metamodule.Role,metamodule.Path);
 						}
 	//	System.out.println(map.get("execute"));
 	}
@@ -87,7 +90,13 @@ public class Repository {
 	public byte[] searchrepo(String role) {
 		System.out.println(role);
 		return this.map.get(role);
+//		return this.map2.get(role);
 	}
+	
+	public String searchrepo2(String role){
+		System.out.println(role);
+		return this.map2.get(role);
+}
 	
 	
 

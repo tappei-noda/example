@@ -33,6 +33,9 @@ public class MetaObjectManager {
 		return configmanager.outstream();
 		
 	}
+	public String loadstream2(){
+		return configmanager.outstream2();	
+}
 /*	public byte[] loadstream() {
 		 stream = configmanager.outstream();
 		return stream;
