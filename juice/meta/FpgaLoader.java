@@ -17,7 +17,7 @@ public class FpgaLoader extends MetaObject{
 	public void setup() {
 		
 		metaobjectmanager = this.getmetaobjectmanager();
-//		getstream();
+		getstream();
 		getstream2();
 //		outputstream();
 		outputstream2();
@@ -32,7 +32,7 @@ public class FpgaLoader extends MetaObject{
 		System.out.println(stream2);	
 }
 	public void outputstream2(){
-		int x = jnatest.INSTANCE.add(8,9,stream2);
+		int x = jnatest.INSTANCE.add(stream);
 		System.out.println(x);
 		
 }
@@ -42,7 +42,7 @@ public class FpgaLoader extends MetaObject{
 			try {
 			BufferedOutputStream file = new BufferedOutputStream
 			(new FileOutputStream
-			("/Users/noda/Downloads/jiken2t6/week2/system1/example.bit"));
+			("/workspace/vitis_example/Vitis-Tutorials/docs/mixing-c-rtl-kernels/reference-files/run5/krnl_sadd.sw_emu.xilinx_u200_xdma_201830_5.xclbin"));
 		    file.write(stream);
 		    file.flush();
 		    file.close();

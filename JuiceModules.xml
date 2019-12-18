@@ -17,7 +17,7 @@
 	</Module> -->
 
 	<Module>
-		<PATH>/workspace/vitis_example/Vitis-Tutorials/docs/mixing-c-rtl-kernels/reference-files/run5/krnl_sadd.sw_emu.xilinx_u200_xdma_201830_2.xclbin</PATH>
+		<PATH>/workspace/vitis_example/Vitis-Tutorials/docs/mixing-c-rtl-kernels/reference-files/run5/krnl_sadd.sw_emu.xilinx_u200_xdma_201830_5.xclbin</PATH>
 		<FQCN>none</FQCN>
 		<ROLE>add</ROLE>
 		<FEATURE>none</FEATURE>
