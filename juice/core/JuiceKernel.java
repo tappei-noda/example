@@ -1,6 +1,6 @@
 package test3.juice.core;
 
-import test3.juice.repository.Repository;
+import test3.juice.repository.*;
 import java.util.List;
 import java.util.ArrayList;
 
@@ -24,5 +24,8 @@ public byte[] search(String role) {
     }
 public String search2(String role){
 	return rep.searchrepo2(role);
+	}
+public MetaModulesInfo search3(String role){
+	return rep.searchrepo3(role);
 	}
 }

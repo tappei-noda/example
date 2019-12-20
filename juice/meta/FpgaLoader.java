@@ -1,24 +1,39 @@
 package test3.juice.meta;
 
+import com.sun.jna.Library;
+import com.sun.jna.Native;
 import java.io.BufferedOutputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import test3.juice.core.*;
+import test3.juice.repository.*;
 
 public class FpgaLoader extends MetaObject{
 	
-	private MetaObjectManager metaobjectmanager;
-	private byte[] stream ;
-	private String stream2;
+		private MetaObjectManager metaobjectmanager;
+		private static MetaModulesInfo metainfo;
+		private static String library;
+		private static byte[] stream ;
+		private String stream2;
 	
 	public FpgaLoader() {
 		}
+
+	public interface jnatest extends Library{
+
+        jnatest INSTANCE = (jnatest)Native.loadLibrary(library,jnatest.class);
+
+                int add(byte[] file2);
+
+        }
+
 	@Override
 	public void setup() {
 		
 		metaobjectmanager = this.getmetaobjectmanager();
-		getstream();
+//		getstream();
 		getstream2();
+		getstream3();
 //		outputstream();
 		outputstream2();
 		
@@ -30,7 +45,13 @@ public class FpgaLoader extends MetaObject{
 	public void getstream2(){
 		stream2 = metaobjectmanager.loadstream2();
 		System.out.println(stream2);	
-}
+			}
+	public void getstream3(){
+		metainfo = metaobjectmanager.loadstream3();
+		this.library = metainfo.Library;
+		this.stream = metainfo.Bin;
+			}
+
 	public void outputstream2(){
 		int x = jnatest.INSTANCE.add(stream);
 		System.out.println(x);

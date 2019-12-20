@@ -3,6 +3,7 @@ package test3.juice.core;
 import java.nio.ByteBuffer;
 import java.util.HashMap;
 import test3.juice.meta.*;
+import test3.juice.repository.*;
 
 public class ConfigManager {
 	
@@ -48,6 +49,10 @@ public class ConfigManager {
 
 	public String outstream2(){
 		return kernel.search2(role);
+}
+
+	public MetaModulesInfo outstream3(){
+		return kernel.search3(role);
 }
 
 	

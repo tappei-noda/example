@@ -19,6 +19,7 @@
 	<Module>
 		<PATH>/workspace/vitis_example/Vitis-Tutorials/docs/mixing-c-rtl-kernels/reference-files/run5/krnl_sadd.sw_emu.xilinx_u200_xdma_201830_5.xclbin</PATH>
 		<FQCN>none</FQCN>
+		<LIBRARY>/workspace/vitis_example/Vitis-Tutorials/docs/mixing-c-rtl-kernels/reference-files/src/noda/libnative3.so</LIBRARY>
 		<ROLE>add</ROLE>
 		<FEATURE>none</FEATURE>
 	</Module>

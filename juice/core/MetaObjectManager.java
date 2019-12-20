@@ -1,6 +1,7 @@
 package test3.juice.core;
 
 import test3.juice.meta.*;
+import test3.juice.repository.*;
 public class MetaObjectManager {
 	private ConfigManager configmanager;
 //	private byte[] stream;
@@ -41,5 +42,7 @@ public class MetaObjectManager {
 		return stream;
 	}
 	*/	
-	
+	public MetaModulesInfo loadstream3(){
+		return configmanager.outstream3();
+	}	
 }

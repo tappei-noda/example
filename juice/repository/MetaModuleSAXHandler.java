@@ -26,6 +26,9 @@ public class MetaModuleSAXHandler extends DefaultHandler{
 		if("PATH".equals(element)) {
 			metainfo.Path = text;
 		}
+		else if("LIBRARY".equals(element)){
+			metainfo.Library = text;
+		}
 		else if("FQCN".equals(element)) {
 			metainfo.Fqcn = text;
 		}
